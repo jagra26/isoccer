@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Sistema {
     int login;
@@ -365,5 +362,76 @@ public class Sistema {
             }
         };
     }
-
+    public boolean Rodar(boolean sair){
+        while (!sair){
+                System.out.print("Escolha uma operação:\n" +
+                        "Adicionar pessoa -- 1\n" +
+                        "Listar pessoas -- 2\n" +
+                        "Adicionar recursos físicos -- 3\n" +
+                        "Listar recursos físicos -- 4\n" +
+                        "Sair -- 5\n" +
+                        "------------------------\n");
+                Scanner entrada = new Scanner(System.in);
+                int operacao = entrada.nextInt();
+                switch (operacao){
+                    case 1:
+                        addPessoa();
+                        break;
+                }
+            }
+    }
+    public void addPessoa () {
+        System.out.print("Escolha uma operação:\n" +
+                "Adicionar presidente --1\n" +
+                "Adicionar tecnico -- 2\n" +
+                "Adicionar jogador --3\n" +
+                "Adicionar funcionario -- 4\n" +
+                "Adicionar sócio -- 5\n" +
+                "------------------------\n");
+        Scanner entrada = new Scanner(System.in);
+        int operacao = entrada.nextInt();
+        switch (operacao) {
+            case 1:
+                addPresidente();
+                break;
+            case 2:
+                addTecnico();
+        }
+    }
+    public void addPresidente(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Insira o nome: ");
+        String nome = entrada.nextLine();
+        System.out.print("\n Insira o email: ");
+        String email = entrada.nextLine();
+        System.out.print("\n Insira o cpf: ");
+        int cpf = entrada.nextInt();
+        System.out.print("\n Insira o telefone: ");
+        int telefone = entrada.nextInt();
+        System.out.print("\nInsira o salário: ");
+        double salario = entrada.nextDouble();
+        System.out.print("\nInsira a taxa de socio elite: ");
+        double taxaElite = entrada.nextDouble();
+        System.out.print("\nInsira a taxa de socio senior: ");
+        double taxaSenior = entrada.nextDouble();
+        System.out.print("\nInsira a taxa de socio junior: ");
+        double taxaJunior = entrada.nextDouble();
+        System.out.print("\n");
+        this.presidente = new Presidente(nome, email, cpf, telefone, salario, taxaElite, taxaSenior, taxaJunior);
+    }
+    public void addTecnico(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Insira o nome: ");
+        String nome = entrada.nextLine();
+        System.out.print("\n Insira o email: ");
+        String email = entrada.nextLine();
+        System.out.print("\n Insira o cpf: ");
+        int cpf = entrada.nextInt();
+        System.out.print("\n Insira o telefone: ");
+        int telefone = entrada.nextInt();
+        System.out.print("\nInsira o salário: ");
+        double salario = entrada.nextDouble();
+        System.out.print("\n");
+        this.tecnico = new Tecnico(nome, email, cpf, telefone, salario);
+    }
 }
