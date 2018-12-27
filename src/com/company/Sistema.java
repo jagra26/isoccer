@@ -377,6 +377,18 @@ public class Sistema {
                     case 1:
                         addPessoa();
                         break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+                        sair = true;
+                        break;
                 }
             }
     }
@@ -396,6 +408,16 @@ public class Sistema {
                 break;
             case 2:
                 addTecnico();
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
         }
     }
     public void addPresidente(){
