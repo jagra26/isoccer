@@ -362,7 +362,7 @@ public class Sistema {
             }
         };
     }
-    public boolean Rodar(boolean sair){
+    public void Rodar(boolean sair){
         while (!sair){
                 System.out.print("Escolha uma operação:\n" +
                         "Adicionar pessoa -- 1\n" +
@@ -378,7 +378,7 @@ public class Sistema {
                         addPessoa();
                         break;
                     case 2:
-
+                        listPessoa();
                         break;
                     case 3:
 
@@ -392,7 +392,7 @@ public class Sistema {
                 }
             }
     }
-    public void addPessoa () {
+    private void addPessoa () /*terminar*/{
         System.out.print("Escolha uma operação:\n" +
                 "Adicionar presidente --1\n" +
                 "Adicionar tecnico -- 2\n" +
@@ -410,50 +410,139 @@ public class Sistema {
                 addTecnico();
                 break;
             case 3:
-
+                addJogador();
                 break;
             case 4:
-
+                addFuncionario();
                 break;
             case 5:
 
                 break;
         }
     }
-    public void addPresidente(){
+    private void addPresidente(){
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Insira o nome: ");
+        System.out.print("Insira o nome:\n");
         String nome = entrada.nextLine();
-        System.out.print("\n Insira o email: ");
+        System.out.print("Insira o email:\n");
         String email = entrada.nextLine();
-        System.out.print("\n Insira o cpf: ");
+        System.out.print("Insira o cpf:\n");
         int cpf = entrada.nextInt();
-        System.out.print("\n Insira o telefone: ");
+        System.out.print("Insira o telefone:\n");
         int telefone = entrada.nextInt();
-        System.out.print("\nInsira o salário: ");
+        System.out.print("Insira o salário:\n");
         double salario = entrada.nextDouble();
-        System.out.print("\nInsira a taxa de socio elite: ");
+        System.out.print("Insira a taxa de socio elite:\n");
         double taxaElite = entrada.nextDouble();
-        System.out.print("\nInsira a taxa de socio senior: ");
+        System.out.print("Insira a taxa de socio senior:\n");
         double taxaSenior = entrada.nextDouble();
-        System.out.print("\nInsira a taxa de socio junior: ");
+        System.out.print("Insira a taxa de socio junior:\n");
         double taxaJunior = entrada.nextDouble();
         System.out.print("\n");
         this.presidente = new Presidente(nome, email, cpf, telefone, salario, taxaElite, taxaSenior, taxaJunior);
     }
-    public void addTecnico(){
+    private void addTecnico(){
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Insira o nome: ");
+        System.out.print("Insira o nome:\n");
         String nome = entrada.nextLine();
-        System.out.print("\n Insira o email: ");
+        System.out.print("Insira o email:\n");
         String email = entrada.nextLine();
-        System.out.print("\n Insira o cpf: ");
+        System.out.print("Insira o cpf:\n");
         int cpf = entrada.nextInt();
-        System.out.print("\n Insira o telefone: ");
+        System.out.print("Insira o telefone:\n");
         int telefone = entrada.nextInt();
-        System.out.print("\nInsira o salário: ");
+        System.out.print("Insira o salário:\n");
         double salario = entrada.nextDouble();
         System.out.print("\n");
         this.tecnico = new Tecnico(nome, email, cpf, telefone, salario);
+    }
+    private void addJogador(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Insira o nome:\n");
+        String nome = entrada.nextLine();
+        System.out.print("Insira o email:\n");
+        String email = entrada.nextLine();
+        System.out.print("Insira o cpf:\n");
+        int cpf = entrada.nextInt();
+        System.out.print("Insira o telefone:\n");
+        int telefone = entrada.nextInt();
+        System.out.print("Insira o salário:\n");
+        double salario = entrada.nextDouble();
+        posicoes();
+        int posicao = entrada.nextInt();
+        inapto();
+        int apto = entrada.nextInt();
+        System.out.print("\n");
+        Jogador contratacao = new Jogador(nome, email, cpf, telefone, salario, posicao, apto);
+        this.time.add(contratacao);
+    }
+    private void posicoes(){
+        System.out.print("insira a posição do jogador\n" +
+                "goleiro -- 1\n" +
+                "lateral direito -- 2\n" +
+                "zagueiro -- 3\n" +
+                "volante -- 5\n" +
+                "lateral esquerdo -- 6\n" +
+                "atacante -- 9\n" +
+                "meia --10\n");
+    }
+    private void inapto(){
+        System.out.print("o jogador está apto pra jogar?\n" +
+                "sim -- 1\n não -- 2\n");
+    }
+    private void addFuncionario()/*terminar*/{
+        System.out.print("Escolha o tipo de funcionario\n" +
+                "Advogado -- 1\n" +
+                "Cozinheiro -- 2\n" +
+                "Médico -- 3\n" +
+                "Motorista -- 4\n" +
+                "Preparador -- 5\n");
+
+    }
+    private void listPessoa(){
+        System.out.print("Escolha uma operação:\n" +
+                "listar presidente --1\n" +
+                "listar tecnico -- 2\n" +
+                "listar jogadores -- 3\n" +
+                "listar funcionarios -- 4\n" +
+                "listar sócios -- 5\n" +
+                "listar todos -- 6\n" +
+                "------------------------\n");
+        Scanner entrada = new Scanner(System.in);
+        int operacao = entrada.nextInt();
+        switch (operacao) {
+            case 1:
+                listPresidente();
+                break;
+            case 2:
+                listTecnico();
+                break;
+            case 3:
+                listTime();
+                break;
+        }
+    }
+    private void listPresidente(){
+        System.out.print("presidente " + this.presidente.nome +"\n" +
+                "email" + this.presidente.email + "\n");
+        System.out.printf("cpf %d\n telefone %d\n salario %2f\n", this.presidente.cpf,
+                this.presidente.telefone, this.presidente.salario);
+    }
+    private void listTecnico(){
+        System.out.print("tecnico " + this.tecnico.nome +"\n" +
+                "email" + this.tecnico.email + "\n");
+        System.out.printf("cpf %d\n telefone %d\n salario %2f\n", this.tecnico.cpf,
+                this.tecnico.telefone, this.tecnico.salario);
+    }
+    private void listTime(){
+        if (this.time != null) {
+            for (List<Jogador>:
+            this.time){
+                if (this.time == null) {
+                    break;
+                }
+                
+            }
+        }
     }
 }

@@ -3,6 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	Sistema isoccer = new Sistema();
+	boolean sair = false;
+	isoccer.Rodar(sair);
     }
 }
