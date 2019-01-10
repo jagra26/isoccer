@@ -7,360 +7,24 @@ public class Sistema {
     String senha;
     Presidente presidente;
     Tecnico tecnico;
-    List<Jogador> time;
-    List<Pessoa> funcionarios;
-    List<Socio> socios;
+    ArrayList<Jogador> time;
+    ArrayList<Pessoa> funcionarios;
+    ArrayList<Socio> socios;
+    int[] frota;
+    Estadio campo;
+    CT centro;
     public Sistema(){
         this.login = 123;
         this.senha = "bolinh0";
-        this.time = new List<Jogador>() {
-            @Override
-            public int size() {
-                return 0;
-            }
-
-            @Override
-            public boolean isEmpty() {
-                return false;
-            }
-
-            @Override
-            public boolean contains(Object o) {
-                return false;
-            }
-
-            @Override
-            public Iterator<Jogador> iterator() {
-                return null;
-            }
-
-            @Override
-            public Object[] toArray() {
-                return new Object[0];
-            }
-
-            @Override
-            public <T> T[] toArray(T[] a) {
-                return null;
-            }
-
-            @Override
-            public boolean add(Jogador jogador) {
-                return false;
-            }
-
-            @Override
-            public boolean remove(Object o) {
-                return false;
-            }
-
-            @Override
-            public boolean containsAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(Collection<? extends Jogador> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(int index, Collection<? extends Jogador> c) {
-                return false;
-            }
-
-            @Override
-            public boolean removeAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean retainAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public void clear() {
-
-            }
-
-            @Override
-            public Jogador get(int index) {
-                return null;
-            }
-
-            @Override
-            public Jogador set(int index, Jogador element) {
-                return null;
-            }
-
-            @Override
-            public void add(int index, Jogador element) {
-
-            }
-
-            @Override
-            public Jogador remove(int index) {
-                return null;
-            }
-
-            @Override
-            public int indexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public int lastIndexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public ListIterator<Jogador> listIterator() {
-                return null;
-            }
-
-            @Override
-            public ListIterator<Jogador> listIterator(int index) {
-                return null;
-            }
-
-            @Override
-            public List<Jogador> subList(int fromIndex, int toIndex) {
-                return null;
-            }
-        };
-        this.funcionarios = new List<Pessoa>() {
-            @Override
-            public int size() {
-                return 0;
-            }
-
-            @Override
-            public boolean isEmpty() {
-                return false;
-            }
-
-            @Override
-            public boolean contains(Object o) {
-                return false;
-            }
-
-            @Override
-            public Iterator<Pessoa> iterator() {
-                return null;
-            }
-
-            @Override
-            public Object[] toArray() {
-                return new Object[0];
-            }
-
-            @Override
-            public <T> T[] toArray(T[] a) {
-                return null;
-            }
-
-            @Override
-            public boolean add(Pessoa pessoa) {
-                return false;
-            }
-
-            @Override
-            public boolean remove(Object o) {
-                return false;
-            }
-
-            @Override
-            public boolean containsAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(Collection<? extends Pessoa> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(int index, Collection<? extends Pessoa> c) {
-                return false;
-            }
-
-            @Override
-            public boolean removeAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean retainAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public void clear() {
-
-            }
-
-            @Override
-            public Pessoa get(int index) {
-                return null;
-            }
-
-            @Override
-            public Pessoa set(int index, Pessoa element) {
-                return null;
-            }
-
-            @Override
-            public void add(int index, Pessoa element) {
-
-            }
-
-            @Override
-            public Pessoa remove(int index) {
-                return null;
-            }
-
-            @Override
-            public int indexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public int lastIndexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public ListIterator<Pessoa> listIterator() {
-                return null;
-            }
-
-            @Override
-            public ListIterator<Pessoa> listIterator(int index) {
-                return null;
-            }
-
-            @Override
-            public List<Pessoa> subList(int fromIndex, int toIndex) {
-                return null;
-            }
-        };
-        this.socios = new List<Socio>() {
-            @Override
-            public int size() {
-                return 0;
-            }
-
-            @Override
-            public boolean isEmpty() {
-                return false;
-            }
-
-            @Override
-            public boolean contains(Object o) {
-                return false;
-            }
-
-            @Override
-            public Iterator<Socio> iterator() {
-                return null;
-            }
-
-            @Override
-            public Object[] toArray() {
-                return new Object[0];
-            }
-
-            @Override
-            public <T> T[] toArray(T[] a) {
-                return null;
-            }
-
-            @Override
-            public boolean add(Socio socio) {
-                return false;
-            }
-
-            @Override
-            public boolean remove(Object o) {
-                return false;
-            }
-
-            @Override
-            public boolean containsAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(Collection<? extends Socio> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(int index, Collection<? extends Socio> c) {
-                return false;
-            }
-
-            @Override
-            public boolean removeAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean retainAll(Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public void clear() {
-
-            }
-
-            @Override
-            public Socio get(int index) {
-                return null;
-            }
-
-            @Override
-            public Socio set(int index, Socio element) {
-                return null;
-            }
-
-            @Override
-            public void add(int index, Socio element) {
-
-            }
-
-            @Override
-            public Socio remove(int index) {
-                return null;
-            }
-
-            @Override
-            public int indexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public int lastIndexOf(Object o) {
-                return 0;
-            }
-
-            @Override
-            public ListIterator<Socio> listIterator() {
-                return null;
-            }
-
-            @Override
-            public ListIterator<Socio> listIterator(int index) {
-                return null;
-            }
-
-            @Override
-            public List<Socio> subList(int fromIndex, int toIndex) {
-                return null;
-            }
-        };
+        this.time = new ArrayList<Jogador>();
+        this.funcionarios = new ArrayList<Pessoa>();
+        this.socios = new ArrayList<Socio>();
+        this.frota = new int[100];
+        for (int bool:
+             frota) {
+            bool = -1;
+        }
+        
     }
     public void Rodar(boolean sair){
         while (!sair){
@@ -501,12 +165,12 @@ public class Sistema {
     }
     private void listPessoa(){
         System.out.print("Escolha uma operação:\n" +
-                "listar presidente --1\n" +
-                "listar tecnico -- 2\n" +
-                "listar jogadores -- 3\n" +
-                "listar funcionarios -- 4\n" +
-                "listar sócios -- 5\n" +
-                "listar todos -- 6\n" +
+                "Listar presidente --1\n" +
+                "Listar tecnico -- 2\n" +
+                "Listarar jogadores -- 3\n" +
+                "Listar funcionarios -- 4\n" +
+                "Listar sócios -- 5\n" +
+                "Listar todos -- 6\n" +
                 "------------------------\n");
         Scanner entrada = new Scanner(System.in);
         int operacao = entrada.nextInt();
@@ -534,15 +198,60 @@ public class Sistema {
         System.out.printf("cpf %d\n telefone %d\n salario %2f\n", this.tecnico.cpf,
                 this.tecnico.telefone, this.tecnico.salario);
     }
-    private void listTime(){
-        if (this.time != null) {
-            for (List<Jogador>:
-            this.time){
-                if (this.time == null) {
-                    break;
-                }
-                
+    private void listTime()/*terminar*/{
+        for (int i = 0; i < this.time.size(); i++) {
+            
+        }
+    }
+    private void addBus(){
+        for (int bool:
+             this.frota) {
+            if (bool == -1){
+                System.out.print("Disponível?\nSim -- 1  Não -- 2");
+                Scanner entrada =  new Scanner(System.in);
+                bool = entrada.nextInt();
+                break;
             }
+        }
+    }
+    private void listBus(){
+        for (int i = 0; i< 100; i++){
+            if(this.frota[i] == -1){
+                if(i == 0){
+                    System.out.print("O clube não possui nenhum ônibus\n");
+                }
+                break;
+            }
+            System.out.printf("Onibus nº %d", i);
+            if(this.frota[i] == 1){
+                System.out.print("Disponível\n");
+            }else{
+                System.out.print("Indisponível\n");
+            }
+        }
+    }
+    private void addEstadio(){
+        this.campo = new Estadio();
+    }
+    private void lisEstadio(){
+        if (this.campo == null){
+            System.out.print("este recurso não está disponivel");
+        }else{
+            System.out.printf("nome: %s\ncapacidade: %d\nbanheiros: %d\nlanchonetes: %d\n",
+            this.campo.nome, this.campo.capacidade, this.campo.banheiros, this.campo.lanchonetes);
+        }
+    }
+    private void modEstadio(){
+        this.campo = this.campo.modificar();
+    }
+    private void addCT(){
+        this.centro = new CT();
+    }
+    private void listCT(){
+        if (this.centro == null){
+            System.out.print("o clube não possui CT\n");
+        }else{
+            System.out.printf("nome: %s\ndormitorios: %d\n", this.centro.nome, this.centro.dormitorios);
         }
     }
 }

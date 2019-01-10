@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b18ae1-724a-4137-ae89-72d7024ae4f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/CT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Estadio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Jogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Presidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Presidente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tecnico.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,16 +41,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="544" column="9" selection-start-line="544" selection-start-column="9" selection-end-line="544" selection-end-column="9" />
+            <state relative-caret-position="445">
+              <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
               <folding>
-                <element signature="class#330:3025" />
-                <element signature="e#2834#2835#0" expanded="true" />
-                <element signature="e#2877#2878#0" expanded="true" />
-                <element signature="class#3059:5740" />
-                <element signature="class#5768:8435" />
-                <element signature="e#6877#6878#0" expanded="true" />
-                <element signature="e#6921#6922#0" expanded="true" />
+                <element signature="method#Rodar#0;class#Sistema#0" />
                 <element signature="method#addPessoa#0;class#Sistema#0" />
                 <element signature="method#addPresidente#0;class#Sistema#0" />
                 <element signature="method#addTecnico#0;class#Sistema#0" />
@@ -57,9 +52,34 @@
                 <element signature="method#posicoes#0;class#Sistema#0" />
                 <element signature="method#inapto#0;class#Sistema#0" />
                 <element signature="method#addFuncionario#0;class#Sistema#0" />
+                <element signature="method#listPessoa#0;class#Sistema#0" />
                 <element signature="method#listPresidente#0;class#Sistema#0" />
-                <element signature="method#listPresidente#1;class#Sistema#0" />
+                <element signature="method#listTecnico#0;class#Sistema#0" />
+                <element signature="method#listTime#0;class#Sistema#0" />
+                <element signature="method#addBus#0;class#Sistema#0" />
+                <element signature="method#listBus#0;class#Sistema#0" />
+                <element signature="e#7647#8014#1" />
+                <element signature="method#lisEstadio#0;class#Sistema#0" />
+                <element signature="method#listCT#0;class#Sistema#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Estadio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/CT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -107,10 +127,15 @@
     <findStrings>
       <find>adicionar</find>
       <find>presidente</find>
+      <find>List</find>
+      <find>ArrayList</find>
     </findStrings>
     <replaceStrings>
       <replace>listar</replace>
       <replace>tecnico</replace>
+      <replace>ArrayList</replace>
+      <replace>Listar</replace>
+      <replace>list</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -134,6 +159,10 @@
         <option value="$PROJECT_DIR$/src/com/company/Tecnico.java" />
         <option value="$PROJECT_DIR$/src/com/company/Jogador.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Objeto.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Onibus.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Estadio.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CT.java" />
         <option value="$PROJECT_DIR$/src/com/company/Sistema.java" />
       </list>
     </option>
@@ -144,13 +173,15 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,11 +204,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546058268918" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547153832906" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,20 +261,20 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -259,7 +290,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Sistema.java</url>
-          <line>444</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -337,24 +368,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Presidente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Tecnico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -368,25 +392,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Tecnico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Presidente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Objeto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Onibus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Estadio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="544" column="9" selection-start-line="544" selection-start-column="9" selection-end-line="544" selection-end-column="9" />
+        <state relative-caret-position="445">
+          <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
           <folding>
-            <element signature="class#330:3025" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2877#2878#0" expanded="true" />
-            <element signature="class#3059:5740" />
-            <element signature="class#5768:8435" />
-            <element signature="e#6877#6878#0" expanded="true" />
-            <element signature="e#6921#6922#0" expanded="true" />
+            <element signature="method#Rodar#0;class#Sistema#0" />
             <element signature="method#addPessoa#0;class#Sistema#0" />
             <element signature="method#addPresidente#0;class#Sistema#0" />
             <element signature="method#addTecnico#0;class#Sistema#0" />
@@ -394,8 +447,15 @@
             <element signature="method#posicoes#0;class#Sistema#0" />
             <element signature="method#inapto#0;class#Sistema#0" />
             <element signature="method#addFuncionario#0;class#Sistema#0" />
+            <element signature="method#listPessoa#0;class#Sistema#0" />
             <element signature="method#listPresidente#0;class#Sistema#0" />
-            <element signature="method#listPresidente#1;class#Sistema#0" />
+            <element signature="method#listTecnico#0;class#Sistema#0" />
+            <element signature="method#listTime#0;class#Sistema#0" />
+            <element signature="method#addBus#0;class#Sistema#0" />
+            <element signature="method#listBus#0;class#Sistema#0" />
+            <element signature="e#7647#8014#1" />
+            <element signature="method#lisEstadio#0;class#Sistema#0" />
+            <element signature="method#listCT#0;class#Sistema#0" />
           </folding>
         </state>
       </provider>
