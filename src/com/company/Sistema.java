@@ -27,6 +27,14 @@ public class Sistema {
         
     }
     public void Rodar(boolean sair){
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("insira a senha:\n");
+        String senha = entrada.nextLine();
+        while (!this.senha.equals(senha)){
+            System.out.print("senha incorreta\n");
+            System.out.print("insira a senha:\n");
+            senha = entrada.nextLine();
+        }
         while (!sair){
                 System.out.print("Escolha uma operação:\n" +
                         "Adicionar pessoa -- 1\n" +
@@ -35,7 +43,6 @@ public class Sistema {
                         "Listar recursos físicos -- 4\n" +
                         "Sair -- 5\n" +
                         "------------------------\n");
-                Scanner entrada = new Scanner(System.in);
                 int operacao = entrada.nextInt();
                 switch (operacao){
                     case 1:
@@ -161,13 +168,38 @@ public class Sistema {
                 "Médico -- 3\n" +
                 "Motorista -- 4\n" +
                 "Preparador -- 5\n");
+        Scanner entrada = new Scanner(System.in);
+        Pessoa funcionario;
+        int tipo = entrada.nextInt();
+        switch (tipo){
+            case 1:
+                funcionario = new Advogado();
+                this.funcionarios.add(funcionario);
+                break;
+            case 2:
+                funcionario = new Cozinheiro();
+                this.funcionarios.add(funcionario);
+                break;
+            case 3:
+                funcionario = new Medico();
+                this.funcionarios.add(funcionario);
+                break;
+            case 4:
+                funcionario = new Motorista();
+                this.funcionarios.add(funcionario);
+                break;
+            case 5:
+                funcionario = new Preparador();
+                this.funcionarios.add(funcionario);
+                break;
+        }
 
     }
     private void listPessoa(){
         System.out.print("Escolha uma operação:\n" +
                 "Listar presidente --1\n" +
                 "Listar tecnico -- 2\n" +
-                "Listarar jogadores -- 3\n" +
+                "Listar jogadores -- 3\n" +
                 "Listar funcionarios -- 4\n" +
                 "Listar sócios -- 5\n" +
                 "Listar todos -- 6\n" +
@@ -198,9 +230,10 @@ public class Sistema {
         System.out.printf("cpf %d\n telefone %d\n salario %2f\n", this.tecnico.cpf,
                 this.tecnico.telefone, this.tecnico.salario);
     }
-    private void listTime()/*terminar*/{
+    private void listTime(){
+        System.out.print("time:\n");
         for (int i = 0; i < this.time.size(); i++) {
-            
+            System.out.print(this.time.get(i));
         }
     }
     private void addBus(){

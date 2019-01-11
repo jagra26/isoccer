@@ -2,7 +2,13 @@ package com.company;
 
 public class Jogador extends Pessoa {
     String tipo;
-    boolean apto;
+    String apto;
+    @Override
+    public String toString() {
+        return  this.nome + "\n" + this.tipo + "\n" + this.apto + "\ncpf: " + this.cpf
+                + "\nemail: " + this.email + "\ntelefone: " + this.telefone + "\nsalario: " + this.salario +
+                "\n-----------\n";
+    }
     public Jogador(String nome, String email, int cpf, int telefone, double salario, int tipo, int apto){
         super.nome = nome;
         super.email = email;
@@ -11,7 +17,7 @@ public class Jogador extends Pessoa {
         super.salario = salario;
         this.tipo = posicao(tipo);
         this.apto = dm(apto);
-    }
+        }
     private String posicao(int camisa){
         switch (camisa){
             case 1:
@@ -31,8 +37,8 @@ public class Jogador extends Pessoa {
         }
         return "error";
     }
-    private boolean dm(int apto){
-        if (apto == 1){return true;}
-        return false;
+    private String dm(int apto){
+        if (apto == 1){return "apto";}
+        return "inapto";
     }
 }
