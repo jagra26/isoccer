@@ -45,10 +45,10 @@ public class Sistema {
                         listPessoa();
                         break;
                     case 3:
-
+                        addRecursos();
                         break;
                     case 4:
-
+                        listRecursos();
                         break;
                     case 5:
                         sair = true;
@@ -233,7 +233,7 @@ public class Sistema {
     private void addEstadio(){
         this.campo = new Estadio();
     }
-    private void lisEstadio(){
+    private void listEstadio(){
         if (this.campo == null){
             System.out.print("este recurso não está disponivel");
         }else{
@@ -242,7 +242,11 @@ public class Sistema {
         }
     }
     private void modEstadio(){
-        this.campo = this.campo.modificar();
+        if (this.campo != null) {
+            this.campo = this.campo.modificar();
+        }else {
+            System.out.print("O clube não possui estádio\n");
+        }
     }
     private void addCT(){
         this.centro = new CT();
@@ -252,6 +256,59 @@ public class Sistema {
             System.out.print("o clube não possui CT\n");
         }else{
             System.out.printf("nome: %s\ndormitorios: %d\n", this.centro.nome, this.centro.dormitorios);
+        }
+    }
+    private void listRecursos(){
+        System.out.print("Selecione uma opção:\n" +
+                "listar onibus -- 1\n" +
+                "listar estádio -- 2\n" +
+                "listar CT -- 3\n" +
+                "listar tudo --4\n");
+        Scanner entrada = new Scanner(System.in);
+        int opcao = entrada.nextInt();
+        switch (opcao){
+            case 1:
+                listBus();
+                break;
+            case 2:
+                listEstadio();
+                break;
+            case 3:
+                listCT();
+                break;
+            case 4:
+                listBus();
+                listEstadio();
+                listCT();
+                break;
+        }
+    }
+    private void addRecursos(){
+        System.out.print("Selecione uma opção:\n" +
+                "adicionar onibus -- 1\n" +
+                "adicionar estádio -- 2\n" +
+                "adicionar CT -- 3\n" +
+                "adicionar tudo --4\n" +
+                "modificar estádio -- 5\n");
+        Scanner entrada = new Scanner(System.in);
+        int opcao = entrada.nextInt();
+        switch (opcao){
+            case 1:
+                addBus();
+                break;
+            case 2:
+                addEstadio();
+                break;
+            case 3:
+                addCT();
+                break;
+            case 4:
+                addBus();
+                addEstadio();
+                addCT();
+            case 5:
+                modEstadio();
+                break;
         }
     }
 }

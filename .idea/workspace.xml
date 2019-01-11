@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b18ae1-724a-4137-ae89-72d7024ae4f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/CT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Estadio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/isoccer/com/company/Sistema.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Sistema.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+            <state relative-caret-position="463">
+              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding>
                 <element signature="method#Rodar#0;class#Sistema#0" />
                 <element signature="method#addPessoa#0;class#Sistema#0" />
@@ -60,7 +53,10 @@
                 <element signature="method#listBus#0;class#Sistema#0" />
                 <element signature="e#7647#8014#1" />
                 <element signature="method#lisEstadio#0;class#Sistema#0" />
+                <element signature="method#modEstadio#0;class#Sistema#0" />
                 <element signature="method#listCT#0;class#Sistema#0" />
+                <element signature="method#listRecursos#0;class#Sistema#0" />
+                <element signature="method#addRecursos#0;class#Sistema#0" />
               </folding>
             </state>
           </provider>
@@ -208,7 +204,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547153832906" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547163770329" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -368,13 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -434,10 +423,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+        <state relative-caret-position="463">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding>
             <element signature="method#Rodar#0;class#Sistema#0" />
             <element signature="method#addPessoa#0;class#Sistema#0" />
@@ -455,7 +451,10 @@
             <element signature="method#listBus#0;class#Sistema#0" />
             <element signature="e#7647#8014#1" />
             <element signature="method#lisEstadio#0;class#Sistema#0" />
+            <element signature="method#modEstadio#0;class#Sistema#0" />
             <element signature="method#listCT#0;class#Sistema#0" />
+            <element signature="method#listRecursos#0;class#Sistema#0" />
+            <element signature="method#addRecursos#0;class#Sistema#0" />
           </folding>
         </state>
       </provider>
