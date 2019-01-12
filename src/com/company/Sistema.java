@@ -161,7 +161,7 @@ public class Sistema {
         System.out.print("o jogador está apto pra jogar?\n" +
                 "sim -- 1\n não -- 2\n");
     }
-    private void addFuncionario()/*terminar*/{
+    private void addFuncionario(){
         System.out.print("Escolha o tipo de funcionario\n" +
                 "Advogado -- 1\n" +
                 "Cozinheiro -- 2\n" +
@@ -216,6 +216,9 @@ public class Sistema {
             case 3:
                 listTime();
                 break;
+            case 4:
+                listFuncionario();
+                break;
         }
     }
     private void listPresidente(){
@@ -234,6 +237,12 @@ public class Sistema {
         System.out.print("time:\n");
         for (int i = 0; i < this.time.size(); i++) {
             System.out.print(this.time.get(i));
+        }
+    }
+    private void listFuncionario(){
+        System.out.print("time:\n");
+        for (int i = 0; i < this.funcionarios.size(); i++) {
+            System.out.print(this.funcionarios.get(i));
         }
     }
     private void addBus(){
