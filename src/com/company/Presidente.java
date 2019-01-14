@@ -1,11 +1,13 @@
 package com.company;
 
+
+
 public class Presidente extends Pessoa{
     double taxaElite;
     double taxaSenior;
     double taxaJunior;
 
-    public Presidente(String nome, String email, int cpf, int telefone, double salario,double taxaElite,
+    public Presidente(String nome, String email, long cpf, int telefone, double salario, double taxaElite,
                       double taxaSenior, double taxaJunior){
         super.nome = nome;
         super.email = email;

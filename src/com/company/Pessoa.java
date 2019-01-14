@@ -1,9 +1,11 @@
 package com.company;
 
+import java.math.BigInteger;
+
 public class Pessoa {
     public String nome;
     public String email;
-    public int cpf;
+    public double cpf;
     public int telefone;
     public double salario;
     public String tipo;

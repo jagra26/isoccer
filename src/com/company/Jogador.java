@@ -1,5 +1,7 @@
 package com.company;
 
+import java.math.BigInteger;
+
 public class Jogador extends Pessoa {
     String tipo;
     String apto;
@@ -9,7 +11,7 @@ public class Jogador extends Pessoa {
                 + "\nemail: " + this.email + "\ntelefone: " + this.telefone + "\nsalario: " + this.salario +
                 "\n-----------\n";
     }
-    public Jogador(String nome, String email, int cpf, int telefone, double salario, int tipo, int apto){
+    public Jogador(String nome, String email, double cpf, int telefone, double salario, int tipo, int apto){
         super.nome = nome;
         super.email = email;
         super.cpf = cpf;
