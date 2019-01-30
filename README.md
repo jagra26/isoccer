@@ -53,7 +53,21 @@
     informações são checadas com as que tem no sistema (login "123" e senha "bolinh0". O programa fica em loop até o 
     usuario acertar login e senha, quando o metodo imprime o menu inicial e libera o sistema para o usuario.
 
-
+#CLASSES
+  
+  #SISTEMA
+  
+     Essa classe foi criada para concentrar tudo que o clube tem, há um presidente, um técnico, uma lista de jogadores (time),
+     uma lista de funcionários, uma lista de sócios, uma lista de inteiros representado os onibus, um estádio e um centro de treinamento
+     Presidente e técnico foram postos fora de listas de pessoas pois só há um por clube, então os colocar fora de uma lista facilita o 
+     acesso aos seus dados. Jogadores apesarem de serem funcionários do clube, ficam em uma lista separada dos demais. Pois há um numero 
+     grande de jogadores num clube e eles ficariam espalhados numa lista generica, desta forma o acesso é simplificado.
+     O estádio e o centro de treinamento, cada clube só possui um, não necessitando de uma lista. Os onibus são representados por 
+     inteiros, já que disponibilidade é único dado requerido do ônibus.
+     
+   #PESSOA
+   
+    Essa classe serve de base
 
 
 
