@@ -297,7 +297,7 @@ public class Sistema {
     }
     private void listFuncionario(){
         try {
-            System.out.print("time:\n");
+            System.out.print("Funcionários\n");
             for (int i = 0; i < this.funcionarios.size(); i++) {
                 System.out.print(this.funcionarios.get(i));
             }

@@ -4,12 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Advogado extends Pessoa {
-    @Override
-    public String toString() {
-        return  this.nome + "\n" + this.tipo + "\n" + "\ncpf: " + this.cpf
-                + "\nemail: " + this.email + "\ntelefone: " + this.telefone + "\nsalario: " + this.salario +
-                "\n-----------\n";
-    }
+
     public Advogado() {
         try {
             Scanner entrada = new Scanner(System.in);
