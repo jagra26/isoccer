@@ -67,10 +67,61 @@
      
    #PESSOA
    
-    Essa classe serve de base
+    Essa classe serve de base para presidente, tecnico, jogador, socio, medico, motorista, cozinheiro, preparador, advogado.
+    Contém nome, email, cpf, salario, telefone e tipo (string). Foi criada para facilitar a herança das classes mencionadas.
+    
+  #PRESIDENTE
+  
+    Herda de Pessoa, contém a mais as taxas dos sócios. Foi criada para separar o presidente das demais pessoas, justamente por esses 
+    valores serem usados em outra classe.
+  
+  #JOGADOR
+  
+    Herda de Pessoa, contém a mais a posição(string) e se está apto(string).
+    
+  #MÉDICO
+  
+    Herda de Pessoa, contém a mais o crm(int)
+    
+  #MOTORISTA
+  
+    Herda de Pessoa, contém a mais a cnh(int)
+    
+  #SOCIO
+    
+    Herda de Pessoa, contém a mais a contribuição(double), pagamento(string), adimplente(boolean). Os dois ultimos são, de certa forma, 
+    redundantes. Porém, o adimplente facilita na hora de fazer checagens e o pagamento na hora de exibir dados.
+    
+  #TECNICO, ADVOGADO, COZINHEIRO E PREPARADOR
+  
+    Apenas herdam de Pessoa, não têm nenhum atributo a mais, as fazendo, de certa forma, desnecessarias.
+    Porém, por conflitos entre os construtores dos outros herdeiros de Pessoa e um construtor geral para Pessoa,
+    essas classes foram feitas.
+    
+  #ESTADIO
+  
+    Representa o estádio do clube, tem o nome e as quantidades de lugares, banheiros e lanchonetes. Foi criada para não deixar estas
+    informações soltas pelo Sistema
 
+  #CT
+  
+    Representa o centro de treinamento do clube, tem o nome e a quantidade de dormitórios. Tem a mesma justificativa da anterior
+    
+#HERANÇA
 
+    Se deu com a classe Pessoa e as classes presidente, tecnico, jogador, socio, medico, motorista, cozinheiro, preparador, advogado.
+    Foi feita por causa do grande numero de tipos diferentes necessarios, porém todos eles representavam pessoas. Facilitou muito a 
+    construção do código.
+    
+#POLIMORFISMO
 
+    Se deu com as funções toString nas classes Pessoa, Médico, Motorista, Jogador, Sócio e Presidente. Foi necessário pois se precisou
+    do método em todas essas classes. Facilitou muito a construção do código na funcionalidade de listar pessoas
+    
+#TRATAMENTO DE EXCEÇÕES
+
+    Todas as funções que recebem dados do usuário tem tratamento de execeção. Foi requisito do projeto, mas facilitou muito a
+    usabilidade
 
 
 login 123
