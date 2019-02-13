@@ -123,6 +123,9 @@
     Todas as funções que recebem dados do usuário tem tratamento de execeção. Foi requisito do projeto, mas facilitou muito a
     usabilidade
 
+#DISTRIBUIÇÃO DE MÉTODOS
+
+    Os métodos foram concentradas na classe Sistema, pois facilita o acesso das operações das várias classes
 
 login 123
 senha bolinh0
